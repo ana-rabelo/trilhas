@@ -25,18 +25,16 @@ input, select {
 .app {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-self: center;
-
 }
 
 .app__secao {
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: calc(100% - 100px);
-    float: right;
+    height: 100vh;
 }
 
 .app__cabecalho {
@@ -52,13 +50,11 @@ input, select {
     font-size: 1.5em;
     font-weight: 700;
     padding: 2.5rem;
-    flex: 1 2;
 }
 
 .secao__formulario {
     display: flex;
     flex-direction: column;
-    flex: 2 1;
     margin: 1rem 3rem;
 }
 

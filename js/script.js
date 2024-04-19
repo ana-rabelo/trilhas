@@ -78,8 +78,8 @@ document.querySelector('.formulario--botoes-enviar').addEventListener('click', f
         if (!campo.value){
             algumCampoNaoPreenchido = true;
             document.getElementById(campo.id).style.border = 'var(--vermelho) 1.5px solid';
-            document.querySelector(`label[for="${campo.id}"]`).textContent += ' *';
-        }
+        } else
+            document.getElementById(campo.id).style.border = 'none';
     });
 
     if (algumCampoNaoPreenchido) {
@@ -142,5 +142,4 @@ document.querySelector('.formulario--botoes-enviar').addEventListener('click', f
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
     alert('Obrigado pela inscrição! Um link de confirmação foi enviado para o email cadastrado.');
-
 });
