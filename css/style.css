@@ -104,8 +104,6 @@ input, select {
 }
 
 .file-info--texto {
-    width: 115px;
-    height: 42px;
     overflow: hidden;
     white-space: normal;
 }
@@ -186,6 +184,7 @@ input, select {
         flex-direction: column;
         align-items: center;
     }
+    
 
     .app__secao {
         border-radius: 1rem;
@@ -232,12 +231,6 @@ input, select {
         flex-direction: column;
         align-items: center;
         width: 100%;
-    }
-
-    .file-info--texto {
-        width: 100%;
-        text-align: center;
-        padding: 0 0.6rem;
     }
 
     .secao__heading {

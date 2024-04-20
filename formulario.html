@@ -43,7 +43,7 @@
                 <input type="email" id="email" name="email" placeholder="exemplo@mail.com" required aria-label="E-mail">
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="16" required aria-label="Telefone">
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="16" pattern="\(\d{2}\)\s\d{5}-\d{4}" required aria-label="Telefone">
 
                 <label for="endereco">Endereço</label>
                 <input type="text" id="endereco" name="endereco" placeholder="Endereço completo" required aria-label="Endereço completo">
@@ -59,7 +59,7 @@
                         <div class="doc-id__custom-file-input">
                             <img src="./assets/images/icon-upload.png" alt="Ícone de arquivo" class="file-icon">
                             <div class="file-info">
-                                <p class="file-info--texto">Selecione arquivo ou arraste pra cá</p>
+                                <p class="file-info--texto">Selecione o arquivo</p>
                                 <p class="file-info--tipo">PDF, PNG ou JPG</p>
                             </div>
                             <input type="file" id="documento-id" name="documento-id" accept=".pdf, .png, .jpg" class="hidden" aria-label="Anexar Documento de Identidade">
@@ -68,10 +68,10 @@
                     </div>
                     <div class="secao__formulario--row-doc-res">
                         <label for="documento-res">Comprovante de Residência</label>
-                        <div class="doc-res__custom-file-input">
+                        <div class="doc-res__custom-file-input">    
                             <img src="./assets/images/icon-upload.png" alt="Ícone de arquivo" class="file-icon">
                             <div class="file-info">
-                                <p class="file-info--texto">Selecione arquivo ou arraste pra cá</p>
+                                <p class="file-info--texto">Selecione o arquivo</p>
                                 <p class="file-info--tipo">PDF, PNG ou JPG</p>
                             </div>
                             <input type="file" id="documento-res" name="documento-res" accept=".pdf, .png, .jpg" class="hidden" aria-label="Anexar Comprovante de Residência">

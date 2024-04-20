@@ -15,7 +15,7 @@ fetch(url)
     .catch(error => console.error('Erro ao obter cidades:', error));
 
 // Mostrar os nome do arquivo anexados e validar a extensão do arquivo
-document.getElementById('documento-res').addEventListener('change', function() {
+function handleFile() {
     let fileName = this.files[0].name;
     let fileExtension = fileName.split('.').pop().toLowerCase();
     let allowedExtensions = ['pdf', 'png', 'jpg'];
@@ -25,18 +25,10 @@ document.getElementById('documento-res').addEventListener('change', function() {
     } else {
         alert('Extensão de arquivo inválida. Por favor, selecione um arquivo PDF, PNG ou JPG.');
     }
-});
-document.getElementById('documento-id').addEventListener('change', function() {
-    let fileName = this.files[0].name;
-    let fileExtension = fileName.split('.').pop().toLowerCase();
-    let allowedExtensions = ['pdf', 'png', 'jpg'];
-    let fileInfo = document.querySelector('.doc-id__custom-file-input .file-info');
-    if (allowedExtensions.includes(fileExtension)) {
-        fileInfo.querySelector('p').innerText = fileName;
-    } else {
-        alert('Extensão de arquivo inválida. Por favor, selecione um arquivo PDF, PNG ou JPG.');
-    }
-});
+}
+
+document.getElementById('documento-res').addEventListener('change', handleFile);
+document.getElementById('documento-id').addEventListener('change', handleFile);
 
 // Máscara para o campo CPF
 document.getElementById('cpf').addEventListener('input', function(e) {
