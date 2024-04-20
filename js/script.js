@@ -143,3 +143,19 @@ document.querySelector('.formulario--botoes-enviar').addEventListener('click', f
 
     alert('Obrigado pela inscrição! Um link de confirmação foi enviado para o email cadastrado.');
 });
+
+// Config para mobile
+window.onload = function() {
+    let isMobile = window.matchMedia("only screen and (max-width: 667px)").matches;
+
+    if (isMobile) {
+        let telefoneInput = document.getElementById('telefone');
+        telefoneInput.placeholder = "Telefone";
+
+        let cpfInput = document.getElementById('cpf');
+        cpfInput.placeholder = "CPF";
+
+        let emailInput = document.getElementById('email');
+        emailInput.placeholder = "E-mail";
+    }
+};
