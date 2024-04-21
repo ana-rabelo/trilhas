@@ -28,11 +28,11 @@ Esse esboço do projeto e as etapas do processo, em algum momento serão utiliza
 
 #### Levantamento das necessidades
 
-<img src='https://raw.githubusercontent.com/ana-rabelo/trilhas/main/assets/docs/Requisitos%20do%20sistema.png?token=GHSAT0AAAAAACPASZIMBDMM5FGMNGKGRVIAZRD5FXA'><img>
+<img src='https://raw.githubusercontent.com/ana-rabelo/trilhas/main/assets/docs/Requisitos%20do%20sistema.png?token=GHSAT0AAAAAACPASZINSEI4ZDIWSTOLR4DCZRFHTVA'><img>
 
 #### Passo a passo do sistema
 
-<img src='https://raw.githubusercontent.com/ana-rabelo/trilhas/main/assets/docs/Passo%20a%20passo%20do%20sistema.png?token=GHSAT0AAAAAACPASZINFWA6BLGOYJ6HFYFWZRD5GJQ'><img>
+<img src='https://raw.githubusercontent.com/ana-rabelo/trilhas/main/assets/docs/Passo%20a%20passo%20do%20sistema.png?token=GHSAT0AAAAAACPASZIN73UTXHLRZLIQQWG6ZRFHTTQ'><img>
 
 Essa documentação está disponível no [Miro](https://miro.com/app/board/uXjVKVJLFYA=/?share_link_id=78590089201).
 
