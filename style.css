@@ -237,12 +237,42 @@ input, select {
         padding: 1rem;
     }
 
+    .secao__formulario--row-docs {
+        flex-direction: column;
+    }
+
     .secao__formulario--row-docs > div > div {
         display: flex;
         flex-direction: column;
         padding: 0.6rem 0;
         margin-top: 0.2rem;
         gap: 0.6rem;
+    }
+
+    .secao__formulario--row {
+        flex-direction: column;    
+        gap: 0;
+    }
+
+    .secao__formulario {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    
+    input, select {
+        width: 100%;
+    box-sizing: border-box;
+    }
+
+    .secao__formulario--botoes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .formulario--botoes-cancelar,
+    .formulario--botoes-enviar {
+        width: 100%;
     }
     
     label {

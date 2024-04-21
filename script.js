@@ -15,11 +15,11 @@ fetch(url)
     .catch(error => console.error('Erro ao obter cidades:', error));
 
 // Mostrar os nome do arquivo anexados e validar a extensão do arquivo
-function handleFile() {
+function handleFile(inputId) {
     let fileName = this.files[0].name;
     let fileExtension = fileName.split('.').pop().toLowerCase();
     let allowedExtensions = ['pdf', 'png', 'jpg'];
-    let fileInfo = document.querySelector('.doc-res__custom-file-input .file-info');
+    let fileInfo = document.querySelector(`.${inputId}__custom-file-input .file-info`);
     if (allowedExtensions.includes(fileExtension)) {
         fileInfo.querySelector('p').innerText = fileName;
     } else {
@@ -27,8 +27,12 @@ function handleFile() {
     }
 }
 
-document.getElementById('documento-res').addEventListener('change', handleFile);
-document.getElementById('documento-id').addEventListener('change', handleFile);
+document.getElementById('documento-res').addEventListener('change',function() {
+    handleFile.call(this, 'doc-res');
+});
+document.getElementById('documento-id').addEventListener('change', function() {
+    handleFile.call(this, 'doc-id');
+});
 
 // Máscara para o campo CPF
 document.getElementById('cpf').addEventListener('input', function(e) {
@@ -149,5 +153,8 @@ window.onload = function() {
 
         let emailInput = document.getElementById('email');
         emailInput.placeholder = "E-mail";
+
+        let enderecoInput = document.getElementById('endereco');
+        enderecoInput.placeholder = "Endereço";
     }
 };
